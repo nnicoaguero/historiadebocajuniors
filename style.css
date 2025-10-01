@@ -1,0 +1,423 @@
+/* Reset y fuente base */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background-color: #f9be3d !important; /* Color de fondo principal */
+}
+
+/* =====================
+   TIPOGRAFÍA GENERAL
+   ===================== */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, .btn, .card, .card-title, .card-subtitle, .card-body {
+  font-family: "Share Tech", Arial, sans-serif !important; /* Aplica Share Tech a todo el sitio */
+  font-weight: 400;
+  font-style: normal;
+}
+
+.share-tech-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* HEADER RESPONSIVE */
+header {
+  background-color: #22396b; /* Color de fondo del header */
+  display: flex; /* Elementos en fila */
+  align-items: center; /* Centra verticalmente */
+  justify-content: space-between; /* Espacio entre logo/título y menú */
+  padding: 0 5vw; /* Espaciado horizontal */
+  height: 90px; /* Alto del header */
+  position: relative;
+}
+
+.logo {
+  display: flex; /* Logo e h1 en fila */
+  align-items: center; /* Centra verticalmente */
+}
+
+.logo img {
+  height: 70px; /* Tamaño del logo */
+  width: auto;
+  margin-right: 20px; /* Espacio entre logo y h1 */
+  margin-left: 0;
+  display: block;
+}
+
+.logo h1 {
+  color: white; /* Color del texto */
+  font-size: 2.2rem; /* Tamaño del título */
+  font-weight: bold;
+  text-transform: uppercase; /* Mayúsculas */
+  margin: 0;
+  text-align: left; /* Alineado a la izquierda */
+  padding-left: 10px; /* Espacio respecto al logo */
+}
+
+nav {
+  margin-left: auto; /* Empuja el menú a la derecha */
+}
+
+.nav-links {
+  display: flex; /* Enlaces en fila */
+  gap: 20px; /* Espacio entre enlaces */
+  list-style: none; /* Sin viñetas */
+  margin: 0;
+  justify-content: flex-end; /* Alinea a la derecha */
+}
+
+.nav-links li a {
+  color: white; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.2s; /* Efecto hover */
+}
+
+.nav-links li a:hover {
+  color: #f9be3d; /* Color al pasar el mouse */
+}
+
+.btn button {
+  background-color: #f9be3d; /* Color de fondo del botón */
+  color: #22396b; /* Color de texto del botón */
+  border: none;
+  padding: 4px 10px; /* Rectángulo más chico */
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem; /* Mantiene el tamaño de la tipografía */
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn button:hover {
+  background-color: #ffe08a; /* Color hover del botón */
+}
+
+/* =====================
+   ESTILOS GENERALES
+   ===================== */
+
+/* Fondo principal y tipografía */
+body {
+  background-color: #f9be3d !important; /* Color de fondo principal */
+  font-family: "Nunito", sans-serif;
+}
+
+/* =====================
+   MAIN Y SECCIONES
+   ===================== */
+main {
+  width: 100vw; /* Ocupa todo el ancho de la ventana */
+  max-width: 100vw;
+  margin: 0; /* Sin margen lateral */
+  padding: 32px 0; /* Espaciado vertical */
+  background: rgba(249, 190, 61, 0.7); /* Amarillo similar al body pero más transparente */
+  border-radius: 0; /* Sin bordes redondeados */
+  box-shadow: none; /* Sin sombra */
+}
+
+h2, h3 {
+  text-align: center; /* Centra los títulos */
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+p {
+  text-align: justify; /* Justifica los párrafos */
+  margin-bottom: 18px;
+}
+
+/* =====================
+   TARJETAS DE TÍTULOS INTERNACIONALES
+   ===================== */
+section {
+  margin: 24px 0;
+  display: flex;
+  justify-content: center;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section li {
+  /* Card visual para cada título internacional */
+  background: #22396b;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 12px;
+  margin: 0 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(34,57,107,0.12);
+  transition: transform 0.2s;
+}
+
+section li:hover {
+  transform: scale(1.05);
+  background: #1a2c4d;
+}
+
+section a {
+  color: #ffe08a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   COMPONENTE BOOTSTRAP: ALERTA
+   ===================== */
+/* Ejemplo de alerta Bootstrap en la página principal */
+.bootstrap-alert {
+  margin: 32px auto;
+  max-width: 600px;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+footer {
+  background: #22396b;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 12px 0;
+  margin-top: 40px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.footer-section h3 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #ffe08a;
+}
+
+.footer-section {
+  min-width: 120px;
+}
+
+/* =====================
+   BOTÓN CONTACTO
+   ===================== */
+.btn button {
+  background-color: #f9be3d; /* Color de fondo del botón */
+  color: #22396b; /* Color de texto del botón */
+  border: none;
+  padding: 4px 10px; /* Rectángulo más chico */
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem; /* Mantiene el tamaño de la tipografía */
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn button:hover {
+  background-color: #ffe08a; /* Color hover del botón */
+}
+
+/* =====================
+   HISTORIA Y TITULOS LOCALES SIN FONDO ESPECIAL
+   ===================== */
+.historia-boca {
+  max-width: 900px;
+  margin: 32px auto 0 auto;
+  padding: 24px;
+  background: none; /* Sin fondo especial */
+  border-radius: 0;
+  box-shadow: none;
+}
+.historia-boca h2, .historia-boca h3 {
+  text-align: center;
+  color: #22396b;
+}
+.historia-boca p {
+  text-align: justify;
+}
+
+.titulos-locales {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 24px;
+  background: none; /* Sin fondo especial */
+  border-radius: 0;
+  box-shadow: none;
+}
+.titulos-locales h2 {
+  text-align: center;
+  color: #22396b;
+}
+.titulos-locales p {
+  text-align: justify;
+  color: #22396b;
+}
+.titulos-locales ul {
+  list-style: disc;
+  color: #22396b;
+  padding-left: 24px;
+  background: none;
+  box-shadow: none;
+}
+.titulos-locales li {
+  background: none;
+  color: #22396b;
+  padding: 0;
+  border-radius: 0;
+  font-weight: normal;
+  font-size: 1rem;
+  box-shadow: none;
+  margin-bottom: 8px;
+}
+
+/* =====================
+   LIBERTADORES POR AÑO (SEPARADOR VISUAL)
+   ===================== */
+.libertadores-anio {
+  background: #22396b; /* Fondo igual al header */
+  border: 2px solid #22396b; /* Borde azul oscuro */
+  border-radius: 16px;
+  margin: 32px 4vw; /* Margen lateral para separar del borde de la página */
+  padding: 24px;
+  width: auto;
+  max-width: 100vw;
+  box-shadow: 0 2px 12px rgba(34,57,107,0.08);
+  color: #fff; /* Texto blanco para contraste */
+}
+.libertadores-anio h2, .libertadores-anio h3, .libertadores-anio p, .libertadores-anio ul, .libertadores-anio ol {
+  color: #fff;
+}
+.libertadores-anio a {
+  color: #ffe08a;
+}
+.libertadores-anio img {
+  display: block;
+  margin: 16px auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(34,57,107,0.12);
+}
+
+/* =====================
+   LIBERTADORES POR AÑO (TARJETA BOOTSTRAP CON MARGEN FIJO Y CENTRADO)
+   ===================== */
+.card {
+  max-width: calc(100vw - 90px); /* 45px de margen a cada lado */
+  margin: 32px auto; /* Centrado horizontalmente */
+  border-radius: 16px !important;
+  box-shadow: 0 2px 12px rgba(34,57,107,0.08);
+  background: #22396b !important;
+  color: #fff !important;
+  border: 2px solid #22396b !important;
+}
+@media (max-width: 1000px) {
+  .card {
+    max-width: 98vw;
+    margin: 16px 2vw;
+    border-radius: 8px !important;
+  }
+}
+.card-img-top {
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+}
+.card-title, .card-subtitle, .card-body h3, .card-body h4 {
+  color: #ffe08a !important;
+}
+.card-body ul, .card-body ol, .card-body p {
+  color: #fff !important;
+}
+.card a {
+  color: #ffe08a !important;
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column; /* Elementos apilados */
+    height: auto;
+    padding: 10px 2vw;
+    align-items: flex-start;
+  }
+  .logo {
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .logo img {
+    height: 50px; /* Logo más pequeño */
+    margin-bottom: 10px;
+  }
+  .logo h1 {
+    font-size: 1.2rem; /* Título más pequeño */
+    padding-left: 10px;
+  }
+  nav {
+    width: 100%;
+    margin-left: 0;
+  }
+  .nav-links {
+    flex-direction: column; /* Enlaces apilados */
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+  .btn {
+    margin-bottom: 10px;
+    align-self: flex-end;
+  }
+  main {
+    padding: 8px;
+    border-radius: 8px;
+  }
+  section li {
+    padding: 10px 12px;
+    font-size: 1rem;
+    margin: 4px 0;
+  }
+  .footer-main {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .historia-boca, .titulos-locales {
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .titulos-locales ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .titulos-locales li {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+  .libertadores-anio {
+    margin: 16px 2vw;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .card {
+    max-width: 98vw;
+    margin: 16px auto;
+    border-radius: 8px !important;
+  }
+  .card-img-top {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+  }
+}
